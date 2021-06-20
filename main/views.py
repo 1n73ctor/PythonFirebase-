@@ -15,10 +15,10 @@ from .forms import EventForm, AddMediaForm
 import firebase_admin
 from firebase_admin import credentials, auth, firestore, messaging, storage, db as realtime
 
-cred = credentials.Certificate("swag-f7a2c-firebase-adminsdk-mvzv7-518757bddf.json")
+cred = credentials.Certificate("test.json")
 firebase_admin.initialize_app(cred,{
-    'storageBucket': 'swag-f7a2c.appspot.com',
-    'databaseURL': 'https://swag-f7a2c-default-rtdb.firebaseio.com'
+    'storageBucket': '',
+    'databaseURL': ''
 })
 db = firestore.client()
 bucket = storage.bucket()
